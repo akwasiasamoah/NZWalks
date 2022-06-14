@@ -6,6 +6,7 @@ namespace NZWalks.API.Repositories
     {
         private List<User> Users = new List<User>()
         {
+            /*
             new User()
             {
                 FirstName = "Read Only", LastName = "User", EmailAddress = "readonly@user.com", 
@@ -18,6 +19,7 @@ namespace NZWalks.API.Repositories
                 Id = Guid.NewGuid(), Username = "readwrite@user.com", Password = "Readwrite@user",
                 Roles = new List<string> { "reader", "writer" }
             }
+            */
         };
         public async Task<User> AuthenticateAsync(string username, string password)
         {
